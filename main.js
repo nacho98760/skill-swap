@@ -18,3 +18,19 @@ searchForm.addEventListener("submit", (event) => {
         }
     }
 })
+
+
+for (var i = 0; i < links.length; i++) { 
+
+    if (links[i].href.includes("template")) {
+
+        links[i].addEventListener('click', (event) => { 
+
+        event.preventDefault(); 
+
+        console.log('Link clicked: ' + event.target.id); 
+    
+    }); 
+
+    }
+} 
